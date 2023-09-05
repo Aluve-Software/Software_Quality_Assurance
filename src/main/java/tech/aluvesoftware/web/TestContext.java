@@ -6,11 +6,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import tech.aluvesoftware.web.manager.PageObjectManager;
 
 import java.time.Duration;
 
 public class TestContext {
     private WebDriver driver;
+    private PageObjectManager pageObjectManager;
 
     /*
     *@param implicitWait Wait time in seconds
@@ -18,6 +20,10 @@ public class TestContext {
     public TestContext(int implicitWait) {
         driver = getDriver();
         driver.manage().timeouts().implicitlyWait((Duration.ofSeconds(implicitWait)));
+    }
+
+    public PageObjectManager getPageObjectManager() {
+        return pageObjectManager;
     }
 
 
