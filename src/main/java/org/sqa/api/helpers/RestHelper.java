@@ -6,12 +6,16 @@ import com.google.gson.Gson;
 
 public class RestHelper {
 
-    private final Gson gson = new Gson();
-    public String simpleJsonRequest(Object o){
+    private RestHelper(){
+    }
+
+    private static final Gson gson = new Gson();
+
+    public static String simpleJsonRequest(Object o){
         return gson.toJson(o);
     }
 
-    public <T> T convertJsonToObject(String jsonString, Class<T> chosenClass) {
+    public static <T> T convertJsonToObject(String jsonString, Class<T> chosenClass) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             return objectMapper.readValue(jsonString, chosenClass);

@@ -15,7 +15,7 @@ import java.util.function.Predicate;
 
 import static io.restassured.RestAssured.given;
 
-public class Services {
+public class Request {
 
     private RequestSpecification requestSpec;
     private final String baseURL;
@@ -35,7 +35,7 @@ public class Services {
     @Setter
     private Map<String, String> formParams;
 
-    public Services(String baseURL) {
+    public Request(String baseURL) {
         this.baseURL = baseURL;
     }
 
@@ -77,11 +77,6 @@ public class Services {
         if (formParams != null){
             requestModifier.formParams(formParams);
         }
-
-        if (formParams != null){
-            requestModifier.formParams(formParams);
-        }
-
 
         if(requestParam != null){
             requestModifier.params(requestParam);
