@@ -1,4 +1,4 @@
-package tech.aluvesoftware.web;
+package tech.aluvesoftware;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
