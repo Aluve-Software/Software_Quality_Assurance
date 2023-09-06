@@ -1,4 +1,4 @@
-package org.sqa.api.http;
+package tech.aluvesoftware.api.http;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.Cookie;
@@ -126,8 +126,8 @@ public class Request {
      * The function sends an HTTP request.
      *
      * @return The method `send()` returns a `Response` object. The specific `Response` object returned
-     * depends on the HTTP method specified in the `methods` variable. If `methods` is "POST", a
-     * `Response` object is returned after making a POST request to the `endPoint`. If `methods` is
+     * depends on the HTTP method specified in the `method` variable. If `method` is "POST", a
+     * `Response` object is returned after making a POST request to the `endPoint`. If `method` is
      * "PUT", a `Response` object is returned after making a PUT request to the
      */
     public Response send() {
@@ -136,11 +136,11 @@ public class Request {
             case "POST":
                 return request().when().redirects().follow(true).post(endPoint);
             case "PUT":
-                return request().put(endPoint);
+                return request().when().redirects().follow(true).put(endPoint);
             case "DELETE":
-                return request().delete(endPoint);
+                return request().when().redirects().follow(true).delete(endPoint);
             default:
-                return request().get(endPoint);
+                return request().when().redirects().follow(true).get(endPoint);
         }
     }
 }
