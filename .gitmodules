@@ -1,0 +1,3 @@
+[submodule "web_cox"]
+	path = web_cox
+	url = https://github.com/Aluve-Software/web_cox
