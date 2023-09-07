@@ -12,14 +12,14 @@ import tech.aluvesoftware.web.pages.MainPage;
 
 import static org.junit.Assert.assertTrue;
 
-public class LoginSteps {
+public class WebSteps {
     public WebDriver driver;
     public LoginPage loginPage;
     public MainPage mainPage;
     public TestContext testContext;
     public PageObjectManager pageObjectManager;
 
-    public LoginSteps(TestContext context) {
+    public WebSteps(TestContext context) {
         testContext = context;
         driver = testContext.getDriver();
         pageObjectManager = testContext.getPageObjectManager();
