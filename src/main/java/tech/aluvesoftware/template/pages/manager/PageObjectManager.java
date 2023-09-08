@@ -1,8 +1,8 @@
-package tech.aluvesoftware.web.manager;
+package tech.aluvesoftware.template.pages.manager;
 
 import org.openqa.selenium.WebDriver;
-import tech.aluvesoftware.web.pages.LoginPage;
-import tech.aluvesoftware.web.pages.MainPage;
+import tech.aluvesoftware.template.pages.LoginPage;
+import tech.aluvesoftware.template.pages.MainPage;
 
 
 public class PageObjectManager {

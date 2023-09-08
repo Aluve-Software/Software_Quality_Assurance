@@ -6,9 +6,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import tech.aluvesoftware.TestContext;
-import tech.aluvesoftware.web.manager.PageObjectManager;
-import tech.aluvesoftware.web.pages.LoginPage;
-import tech.aluvesoftware.web.pages.MainPage;
+import tech.aluvesoftware.template.pages.manager.PageObjectManager;
+import tech.aluvesoftware.template.pages.LoginPage;
+import tech.aluvesoftware.template.pages.MainPage;
 
 import static org.junit.Assert.assertTrue;
 

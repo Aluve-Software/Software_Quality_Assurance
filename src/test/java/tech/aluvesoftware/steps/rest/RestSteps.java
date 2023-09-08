@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 
 public class RestSteps {
     private Response response;
-    private Request request;
+    private final Request request;
     private String email;
     private String userPassword;
 

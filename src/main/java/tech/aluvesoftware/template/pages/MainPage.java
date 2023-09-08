@@ -1,4 +1,4 @@
-package tech.aluvesoftware.web.pages;
+package tech.aluvesoftware.template.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
