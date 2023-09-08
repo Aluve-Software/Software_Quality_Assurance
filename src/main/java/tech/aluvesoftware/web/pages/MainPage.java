@@ -2,7 +2,7 @@ package tech.aluvesoftware.web.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import tech.aluvesoftware.web.WebActions;
+import tech.aluvesoftware.WebActions;
 
 public class MainPage {
     private final WebDriver driver;
@@ -12,6 +12,7 @@ public class MainPage {
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
+        webActions = new WebActions(driver, 30);
     }
 
     public void clickLogoutButton(){

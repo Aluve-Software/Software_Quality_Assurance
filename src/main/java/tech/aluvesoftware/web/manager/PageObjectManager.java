@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import tech.aluvesoftware.web.pages.LoginPage;
 import tech.aluvesoftware.web.pages.MainPage;
 
+
 public class PageObjectManager {
     private final WebDriver driver;
     private LoginPage loginPage;

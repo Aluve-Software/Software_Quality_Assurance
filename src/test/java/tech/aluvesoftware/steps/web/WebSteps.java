@@ -5,7 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import tech.aluvesoftware.web.TestContext;
+import tech.aluvesoftware.TestContext;
 import tech.aluvesoftware.web.manager.PageObjectManager;
 import tech.aluvesoftware.web.pages.LoginPage;
 import tech.aluvesoftware.web.pages.MainPage;
@@ -19,10 +19,10 @@ public class WebSteps {
     public TestContext testContext;
     public PageObjectManager pageObjectManager;
 
-    public WebSteps(TestContext context) {
-        testContext = context;
+    public WebSteps() {
+        testContext = new TestContext(30);
         driver = testContext.getDriver();
-        pageObjectManager = testContext.getPageObjectManager();
+        pageObjectManager = new PageObjectManager(driver);
         loginPage = pageObjectManager.getLoginPage();
         mainPage = pageObjectManager.getMainPage();
     }
