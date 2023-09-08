@@ -1,5 +1,5 @@
 @register
-Feature: Add User Feature
+Feature: Register User Feature
 
   Scenario Outline: Validate that the user may login
     Given the email is "<email>"

@@ -55,14 +55,14 @@ public class RestSteps {
 
     @Then("the id is {string}")
     public void theIdIs(String id) {
-       int responseId = response.getBody().jsonPath().getInt(".id");
+       int responseId = response.getBody().jsonPath().getInt("id");
        assertEquals(responseId,Integer.parseInt(id));
 
     }
 
     @Then("the token is {string}")
     public void theTokenIs(String token) {
-        String responseToken = response.getBody().jsonPath().getString(".token");
+        String responseToken = response.getBody().jsonPath().getString("token");
         assertEquals(responseToken, token);
     }
 }
