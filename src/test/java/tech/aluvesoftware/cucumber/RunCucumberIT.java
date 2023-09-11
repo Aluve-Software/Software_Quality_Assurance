@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features/rest",
-        glue="tech/aluvesoftware/steps/rest",
-        tags="@register"
+        features = "src/test/resources/features/web",
+        glue="tech/aluvesoftware/steps/web",
+        tags="@login"
 )
 public class RunCucumberIT {
 }

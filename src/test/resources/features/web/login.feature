@@ -2,7 +2,7 @@
 Feature: Login Feature
 
   Background:
-    Given the user is on the landing pages
+    Given the user is on the landing page
 
   Scenario Outline: Validate that the user may login
     When the user logs in with the username "<username>" and password "<password>"

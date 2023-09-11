@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import tech.aluvesoftware.TestContext;
-import tech.aluvesoftware.template.pages.manager.PageObjectManager;
+import tech.aluvesoftware.template.manager.PageObjectManager;
 import tech.aluvesoftware.template.pages.LoginPage;
 import tech.aluvesoftware.template.pages.MainPage;
 
