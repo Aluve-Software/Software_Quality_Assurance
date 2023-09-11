@@ -1,4 +1,4 @@
-package tech.aluvesoftware.template.pages.manager;
+package tech.aluvesoftware.template.manager;
 
 import org.openqa.selenium.WebDriver;
 import tech.aluvesoftware.template.pages.LoginPage;
